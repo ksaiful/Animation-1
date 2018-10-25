@@ -1,0 +1,28 @@
+.box{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: relative;
+	-webkit-animation: test;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-delay: 2s;
+	-webkit-animation-iteration-count: infinit
+	animation: test;
+	animation-duration: 5s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+}
+@-webkit-keyframes test{
+	0%{background-color: red}
+	25%{background-color: blue}
+	75%{background-color: green}
+	100%{background-color: yellow;}
+}
+@keyframes test{
+	0%{background-color: red; left:0px; top:0px;}
+	25%{background-color: blue; left: 300px; top: 0px;}
+	50%{background-color: blue; left: 300px; top:300px;}
+	75%{background-color: green; left: 0px; top: 300px;}
+	100%{background-color: yellow; left: 0px; top: 0px}
+
+}
